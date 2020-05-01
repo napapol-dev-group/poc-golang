@@ -1,0 +1,14 @@
+version: "3.4"
+services:
+  poc-golang:
+    build:
+      context: ../..
+      dockerfile: Dockerfile
+      target: builder
+    container_name: poc-golang
+    command:  sh -c 'cd app && fresh'
+    restart: 'always'
+    volumes:
+      - ../..:/go/src/github.com/napapol-dev-group/poc-golang
+    ports:
+      - "8080:8080"
