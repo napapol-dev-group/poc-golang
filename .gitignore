@@ -1,0 +1,5 @@
+\.coverage\.txt
+\.idea/*
+
+resources/docker/postgres/db/*
+app/tmp/*

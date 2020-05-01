@@ -21,6 +21,3 @@ format:
 mockgen:
 	mockgen -source=./app/repositories/$(module)/init.go -destination=./app/mocks/$(module)/repo.go
 	mockgen -source=./app/use_cases/$(module)/init.go -destination=./app/mocks/$(module)/use_case.go
-
-mockgen-all:
-    mockgen module=user
