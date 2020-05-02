@@ -18,5 +18,5 @@ func InitUseCase(userRepository repository.Repo) UseCase {
 
 // UseCase Operate Area use case interface
 type UseCase interface {
-	RegisterUser(operateAreaEntity entities.CreateUser) (*entities.CreateUser, error)
+	RegisterUser(createUser entities.CreateUser) (*entities.CreateUser, error)
 }
