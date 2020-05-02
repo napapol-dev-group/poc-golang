@@ -7,9 +7,6 @@
 #Builder stageresources
 FROM golang:1.13-alpine as builder
 
-# Update OS package and install Git
-RUN apk update && apk add git openssh && apk add build-base
-
 # Set working directory
 WORKDIR /go/src/github.com/napapol-dev-group/poc-golang
 
